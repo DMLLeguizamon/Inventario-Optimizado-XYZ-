@@ -1,4 +1,5 @@
 🛠️ Ingeniería de Datos: De la Auditoría a la Automatización
+
 Este repositorio documenta el ciclo de vida de los datos para un sistema de gestión de inventarios, abarcando desde el diagnóstico técnico hasta la implementación de una arquitectura de datos escalable.
 
 🔍 1. Auditoría Técnica (Python)
