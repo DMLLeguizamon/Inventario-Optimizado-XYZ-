@@ -19,6 +19,7 @@ Se inicializa la base de datos `ManufacturingCompany`. El script asegura la crea
 ##  Parte 2 y 3: Diseño de Tablas y Relaciones (DER)
 El sistema utiliza una arquitectura relacional normalizada. Se definen las Primary Keys y Foreign Keys para garantizar que cada venta o compra esté vinculada a un producto y tienda existentes.
 
+![Diagrama Entidad Relación](Img/DER.png)
 
 
 **Tablas Principales:**
