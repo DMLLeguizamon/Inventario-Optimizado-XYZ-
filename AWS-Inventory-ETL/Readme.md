@@ -48,9 +48,3 @@ Una segunda AWS Lambda detecta los datos en la capa Clear y ejecuta un proceso d
 
 ![Carga SQL](Img/4_Carga%20(LambdaSQL).png)
 
-### Carga y Normalización (Capa SQL)
-
-Una segunda AWS Lambda detecta los datos en la capa Clear y ejecuta un proceso de carga hacia SQL Database mediante scripts predefinidos, automatizando la carga que anteriormente era manual.
-
-* **📂 Ver Código:** [Lambda_to_sql](https://www.google.com/search?q=./Code/Lambda_to_sql)
-* **🖼️ Ver Imagen:** [4_Carga (LambdaSQL).png](https://www.google.com/search?q=Img/4_Carga%2520(LambdaSQL).png)
