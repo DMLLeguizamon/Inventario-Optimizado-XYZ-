@@ -151,8 +151,6 @@ El resultado es una toma de decisiones más precisa, una reducción de ineficien
 
 ## 👥 Integrantes del Proyecto
 
-## 👥 Integrantes del Proyecto
-
 - **Dalma Leguizamon** — Data Engineer & Machine Learning Analyst  
   🔗 [GitHub](https://github.com/DMLLeguizamon)
 
