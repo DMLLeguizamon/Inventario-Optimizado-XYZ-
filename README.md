@@ -151,10 +151,20 @@ El resultado es una toma de decisiones más precisa, una reducción de ineficien
 
 ## 👥 Integrantes del Proyecto
 
+## 👥 Integrantes del Proyecto
+
 - **Dalma Leguizamon** — Data Engineer & Machine Learning Analyst  
+  🔗 [GitHub](https://github.com/DMLLeguizamon)
+
 - **Sebastián Lombardi** — Business Intelligence Developer  
+  🔗 [GitHub](https://github.com/SebastianLombardi)
+
 - **Brixia Méndez** — Data Analyst & Data Engineer  
+  🔗 [GitHub](https://github.com/Bricia17)
+
 - **Nicolás Choque** — Database Engineer  
+  🔗 [GitHub](https://github.com/nicochoque)
+
 
 ---
 
