@@ -1,4 +1,4 @@
-# 📦 Stock Intelligence Engine 
+# 📦 Stock Intelligence Engine
 
 Este proyecto implementa un **motor inteligente de decisiones para inventario** cuyo objetivo principal es responder tres preguntas clave del negocio:
 
@@ -14,6 +14,21 @@ En pocas palabras:
 
 ---
 
+# 🧭 Menú
+
+* [🎯 Objetivo del modelo](#objetivo-del-modelo)
+* [⚙️ ¿Cómo funciona a nivel conceptual?](#como-funciona-a-nivel-conceptual)
+* [🧩 ¿Por qué se eligió un modelo no entrenado?](#por-que-se-eligio-un-modelo-no-entrenado)
+* [🤝 ¿Por qué trabajar a nivel Producto–Proveedor (Brand–Vendor)?](#por-que-trabajar-a-nivel-productoproveedor-brandvendor)
+* [💼 ¿Qué beneficios aporta a la empresa?](#que-beneficios-aporta-a-la-empresa)
+* [📊 Resultados del motor](#resultados-del-motor)
+* [🔮 Posibles mejoras futuras](#posibles-mejoras-futuras)
+* [🚀 Conclusión](#conclusion)
+
+---
+
+<a id="objetivo-del-modelo"></a>
+
 ## 🎯 Objetivo del modelo
 
 El motor transforma datos operativos en decisiones accionables para el área de compras y abastecimiento:
@@ -27,6 +42,8 @@ El motor transforma datos operativos en decisiones accionables para el área de 
 Esto permite pasar de una gestión reactiva del inventario a una estrategia basada en datos.
 
 ---
+
+<a id="como-funciona-a-nivel-conceptual"></a>
 
 ## ⚙️ ¿Cómo funciona a nivel conceptual?
 
@@ -52,6 +69,8 @@ El resultado final es una recomendación clara:
 
 ---
 
+<a id="por-que-se-eligio-un-modelo-no-entrenado"></a>
+
 ## 🧩 ¿Por qué se eligió un modelo no entrenado?
 
 Se optó por un enfoque determinístico y transparente por varias razones:
@@ -63,6 +82,8 @@ Se optó por un enfoque determinístico y transparente por varias razones:
 Este motor funciona como un **sistema de inteligencia operativa**, donde cada cálculo tiene una lógica visible y auditable.
 
 ---
+
+<a id="por-que-trabajar-a-nivel-productoproveedor-brandvendor"></a>
 
 ## 🤝 ¿Por qué trabajar a nivel Producto–Proveedor (Brand–Vendor)?
 
@@ -76,6 +97,8 @@ Aunque hoy muchos productos tengan un solo proveedor, el diseño ya contempla es
 
 ---
 
+<a id="que-beneficios-aporta-a-la-empresa"></a>
+
 ## 💼 ¿Qué beneficios aporta a la empresa?
 
 ✔ Reduce pérdidas por quiebres de stock.
@@ -88,6 +111,8 @@ En lugar de comprar por intuición, el equipo puede enfocarse en productos que r
 
 ---
 
+<a id="resultados-del-motor"></a>
+
 ## 📊 Resultados del motor
 
 El sistema genera dos salidas principales:
@@ -98,6 +123,8 @@ El sistema genera dos salidas principales:
 Estas salidas están pensadas para integrarse directamente en herramientas de visualización como Power BI.
 
 ---
+
+<a id="posibles-mejoras-futuras"></a>
 
 ## 🔮 Posibles mejoras futuras
 
@@ -113,6 +140,8 @@ Este proyecto fue diseñado para ser funcional y claro, pero puede evolucionar e
 Estas mejoras permitirían pasar de un motor operativo a un sistema aún más predictivo y estratégico.
 
 ---
+
+<a id="conclusion"></a>
 
 ## 🚀 Conclusión
 
