@@ -23,6 +23,8 @@ El resultado final es un diagnóstico accionable para **optimizar compras**, **m
 
 ---
 
+<a id="alcance-del-periodo-y-magnitud-del-sistema"></a>
+
 ## 1) 📅 Alcance del período y magnitud del sistema
 
 El análisis cubre aproximadamente **375 días** (01/01/2016 → 10/01/2017) y dimensiona la operación:
@@ -35,6 +37,8 @@ El análisis cubre aproximadamente **375 días** (01/01/2016 → 10/01/2017) y d
 Esto confirma por qué el inventario es un problema financiero real: hay **más capital en stock** que facturación anual del período analizado.
 
 ---
+
+<a id="metodología"></a>
 
 ## 2) 🧩 Metodología (en simple)
 
@@ -120,6 +124,8 @@ Traducción a negocio: no hay caos logístico, pero sí **baja redundancia** (ri
 
 ---
 
+<a id="hallazgos-estratégicos"></a>
+
 ## 3) 💵 Hallazgos estratégicos
 
 El inventario como capital.
@@ -163,6 +169,8 @@ No es necesariamente un problema: puede reflejar tamaño/ubicación. Pero sirve 
 
 ---
 
+<a id="decisiones-que-habilita-este-eda"></a>
+
 ## 4) ✅ ¿Qué decisiones habilita este EDA?
 
 ### 🛍️ Decisiones de compra (sin aumentar gasto total)
@@ -184,6 +192,8 @@ No es necesariamente un problema: puede reflejar tamaño/ubicación. Pero sirve 
 
 ---
 
+<a id="por-que-es-valioso-para-la-empresa"></a>
+
 ## 5) 🏢 ¿Por qué este enfoque es valioso para la empresa?
 
 Porque convierte inventario en una lectura de **working capital**:
@@ -200,6 +210,8 @@ Porque convierte inventario en una lectura de **working capital**:
 
 ---
 
+<a id="limitaciones"></a>
+
 ## 6) ⚠️ Limitaciones (claras y honestas)
 
 * 🔄 La “demanda” se reconstruye por **movimiento de inventario** (consumo implícito).
@@ -208,6 +220,8 @@ Porque convierte inventario en una lectura de **working capital**:
 * ✂️ Los outliers se recortan solo para visualización (no para modificar resultados).
 
 ---
+
+<a id="posibles-mejoras"></a>
 
 ## 7) 🚀 Posibles mejoras (no técnicas, orientadas a negocio)
 
@@ -229,5 +243,4 @@ Porque convierte inventario en una lectura de **working capital**:
 
 5. 🧷 **Redundancia de proveedores para SKUs críticos**
    Priorizar productos A/B con proveedor exclusivo y construir alternativas (si el negocio lo permite).
-
 
