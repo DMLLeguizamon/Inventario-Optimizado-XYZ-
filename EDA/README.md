@@ -14,8 +14,8 @@ El resultado final es un diagnóstico accionable para **optimizar compras**, **m
 # 🧭 Menú
 
 * [📅 Alcance del período y magnitud del sistema](#alcance-del-periodo-y-magnitud-del-sistema)
-* [🧩 Metodología](#metodologia)
-* [💵 Hallazgos estratégicos](#hallazgos-estrategicos)
+* [🧩 Metodología](#metodología)
+* [💵 Hallazgos estratégicos](#hallazgos-estratégicos)
 * [✅ Decisiones que habilita este EDA](#decisiones-que-habilita-este-eda)
 * [🏢 ¿Por qué es valioso para la empresa?](#por-que-es-valioso-para-la-empresa)
 * [⚠️ Limitaciones](#limitaciones)
@@ -120,7 +120,7 @@ Traducción a negocio: no hay caos logístico, pero sí **baja redundancia** (ri
 
 ---
 
-## 3) 💵 Hallazgos estratégicos (con números financieros)
+## 3) 💵 Hallazgos estratégicos
 
 El inventario como capital.
 
