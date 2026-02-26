@@ -14,12 +14,13 @@ Este proyecto desarrolla una solución analítica integral que conecta auditorí
 3. [🔄 Flujo Integral del Proyecto](#-flujo-integral-del-proyecto)
 4. [🧩 Estrategia de Implementación](#-estrategia-de-implementación)
 5. [🛠️ Stack Tecnológico](#️-stack-tecnológico)
-6. [🚧 Estado y Avance del Proyecto](#-estado-y-avance-del-proyecto)
-7. [🛣️ Fases Futuras de Proyecto](#️-fases-futuras-del-proyecto)
-8. [🚀 Posibles Mejoras y Evolución](#-posibles-mejoras-y-evolución)
-9. [💼 Impacto Estratégico](#-impacto-estratégico)
-10. [👥 Integrantes del Proyecto](#-integrantes-del-proyecto)
-11. [📜 Licencia](#-licencia)
+6. [📊 EDA Estratégico de Inventario y Abastecimiento](#-eda-estratégico-de-inventario-y-abastecimiento)
+7. [📦 Stock Intelligence Engine](#-stock-intelligence-engine)
+8. [📈 Dashboard Ejecutivo](#-dashboard-ejecutivo)
+9. [🚀 Posibles Mejoras y Evolución](#-posibles-mejoras-y-evolución)
+10. [💼 Impacto Estratégico](#-impacto-estratégico)
+11. [👥 Integrantes del Proyecto](#-integrantes-del-proyecto)
+12. [📜 Licencia](#-licencia)
 
 ---
 
@@ -47,9 +48,19 @@ Manufacturera XYZ/
 │   ├── ETL.ipynb
 │   └── README.md
 │
+├── EDA/
+│   ├── Documentacion EDA.pdf 
+│   ├── Exploratory_EDA_analysis.ipynb
+│   └── README.md
+│
 ├── Img/
 │   ├── Banner.png
 │   └── Flujo integral del Proyecto.png
+│
+├── Modelo-Predictivo/
+│   ├── Doc. Stock_Intelligence_Engine.pdf
+│   ├── README.md
+│   └── Stock_Intelligence_Engine.ipynb
 │
 ├── SQL/
 │   ├── Img/
@@ -76,11 +87,13 @@ Manufacturera XYZ/
 4. **Automatización del Flujo de Datos en la Nube (AWS ETL)**  
    📂 Ver carpeta: [AWS-Inventory-ETL](./AWS-Inventory-ETL)
 
-5. **Análisis EDA y Modelado Predictivo**  
-   *(pendiente / en desarrollo)*
+5. **Análisis EDA Estratégico**  
+   📂 Ver carpeta: [EDA](./EDA)
 
-6. **Visualización Estratégica y Presentación al Cliente Final**  
-   *(pendiente / en desarrollo)*
+6. **Stock Intelligence Engine**  
+   📂 Ver carpeta: [Modelo-Predictivo](./Modelo-Predictivo)
+
+7. **Dashboard Ejecutivo**
 
 [![Flujo Integral del Proyecto](./Img/Flujo%20integral%20del%20Proyecto.png)](./Img/Flujo%20integral%20del%20Proyecto.png)
 
@@ -108,23 +121,128 @@ El proyecto fue desarrollado siguiendo una lógica progresiva:
 
 ---
 
-## 🚧 Estado y Avance del Proyecto
+## 📊 EDA Estratégico de Inventario y Abastecimiento
 
-El proyecto se encuentra en una etapa funcional, con pipeline ETL implementado, modelo relacional construido y recursos gráficos listos para documentación y presentación.
+El EDA convierte datos transaccionales en diagnóstico de negocio.
+
+### 📅 Magnitud del sistema
+- 🧾 SKUs: 12.261
+- 🏬 Sucursales: 80
+- 🛒 Ventas: USD 33,1M
+- 📦 Capital inmovilizado: USD 55,29M
+
+El capital en inventario supera la facturación anual del período, confirmando su impacto financiero.
+
+### 🅰️🅱️🅾️ Clasificación ABC
+
+Distribución del capital:
+- 🅰️ 63,83% (~USD 35,3M)
+- 🅱️ 20,65% (~USD 11,42M)
+- 🅾️ 15,51% (~USD 8,58M)
+
+La inversión sigue la lógica económica del negocio (Pareto).
+
+- 🔄 Rotación y Capital Lento
+- 💸 Capital lento (Rotación ≤ 3): USD 17,2M
+- 📊 Representa 31,12% del capital total
+
+Un tercio del capital tarda demasiado en volver a liquidez.
+
+### ⚠️ Salud Operativa
+
+- 1.939 productos con quiebre operativo (16,86%)
+- 52 productos en riesgo crítico (A/B relevantes)
+- Sobrestock extremo prácticamente inexistente
+- 12 tiendas con desbalances puntuales
+
+Conclusión: sistema estable, con oportunidades de optimización fina.
+
+### 🚚 Logística y Dependencia
+
+- 126 proveedores
+- Lead time promedio: 7–8 días
+- 10.635 productos exclusivos
+
+El abastecimiento es homogéneo, pero con baja redundancia en productos críticos.
 
 ---
 
-## 🛣️ Fases Futuras del Proyecto
+## 📦 Stock Intelligence Engine
 
-Las siguientes etapas representan funcionalidades que forman parte de la evolución natural del proyecto y aún se encuentran en desarrollo:
+Motor determinístico de decisiones de compra basado en riesgo financiero.
+Responde:
+¿Cuándo comprar?
+¿Qué productos priorizar?
+¿Cuánto dinero se pierde si no se compra?
+No predice cuánto se venderá.
+Predice cuándo no comprar se vuelve costoso.
 
-1️⃣ **Exploración completa de datos (EDA)** para profundizar el análisis del comportamiento del inventario.  
-2️⃣ **Implementación del modelo predictivo de demanda** utilizando técnicas de Machine Learning.  
-3️⃣ **Definición y construcción de KPIs estratégicos** orientados a la rotación, quiebres y eficiencia operativa.  
-4️⃣ **Desarrollo de alertas predictivas** basadas en patrones históricos para anticipar riesgos de desabastecimiento o sobrestock.
+### ⚙️ Funcionamiento
 
-Estas fases permitirán consolidar el paso desde un análisis descriptivo hacia una arquitectura analítica predictiva.
+### Integra:
+- Stock actual
+- Consumo histórico
+- Clasificación ABC
+- Lead time
+- Precio representativo
 
+### Calcula:
+- Días de cobertura
+- Fecha de quiebre estimada
+- Días de quiebre potencial
+- Unidades en riesgo
+- Impato económico estimado
+
+### Salida operativa:
+COMPRAR YA
+OK
+
+Modelo transparente, auditable y orientado a acción.
+
+---
+
+## 📈 Dashboard Ejecutivo
+
+El dashboard está estructurado en bloques estratégicos:
+
+1️⃣ Resumen Ejecutivo
+
+- Capital total y capital lento
+- Productos en riesgo
+- Impacto financiero potencial
+
+2️⃣ Demanda, ABC y Rotación
+
+- Distribución ABC
+- Rotación por categoría
+- Capital lento por tipo
+
+3️⃣ Demanda vs Stock
+
+- Matriz 2x2 de tiendas
+- Desbalances operativos
+
+4️⃣ Lead Time y Dependencia
+
+- Clasificación de proveedores
+- Capital expuesto por proveedor
+
+5️⃣ Working Capital
+
+- Concentración de capital por sucursal
+- Top tiendas por capital
+- Capital lento estructural
+
+6️⃣ Forecast y Recomendaciones
+
+- Productos con recomendación automática
+- Impacto financiero estimado
+- Prioridad de compra
+- El diseño sigue una progresión lógica:
+
+Diagnóstico → Riesgo → Impacto → Acción.
+
+---
 
 ## 🚀 Posibles Mejoras y Evolución
 
