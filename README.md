@@ -133,12 +133,12 @@ El EDA convierte datos transaccionales en diagnóstico de negocio.
 
 El capital en inventario supera la facturación anual del período, confirmando su impacto financiero.
 
-### 🅰️🅱️🅾️ Clasificación ABC
+### 🔤 Clasificación ABC
 
 Distribución del capital:
-- 🅰️ 63,83% (~USD 35,3M)
-- 🅱️ 20,65% (~USD 11,42M)
-- 🅾️ 15,51% (~USD 8,58M)
+- A 63,83% (~USD 35,3M)
+- B 20,65% (~USD 11,42M)
+- C 15,51% (~USD 8,58M)
 
 La inversión sigue la lógica económica del negocio (Pareto).
 
